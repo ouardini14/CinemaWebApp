@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default panel-primary">
+      <div class="panel-heading">Ajouter une viller</div>
+      <div class="panel-body">
+        <form #f="ngForm" (ngSubmit)="onSaveCity(f.value)">
+          <div class="form-group">
+            <label for="name">Nom de ville</label>
+            <input type="text" [(ngModel)]="cityName" name="name" id="name" class="form-control">
+          </div>
+          <button class="btn btn-primary" type="submit">save</button>
+        </form>
+      </div>
+      </div>
+  </div>
+</div>
